@@ -70,9 +70,15 @@ body {
   width: 250px;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 900px) {
   .logo-nav {
     width: 200px;
+  }
+}
+
+@media (max-width: 425px) {
+  .logo-nav {
+    width: 120px;
   }
 }
 
@@ -696,6 +702,23 @@ body {
 
 .imagenes-carousel-equipo {
   width: 75% !important;
+}
+
+.fs-18-a-14 {
+  font-size: 18px !important;
+  font-weight: 700;
+}
+
+@media (max-width: 600px) {
+  .fs-18-a-14 {
+    font-size: 14px !important;
+  }
+}
+
+@media (max-width: 320px) {
+  .fs-18-a-14 {
+    font-size: 12px !important;
+  }
 }
 
 @media (max-width: 600px) {

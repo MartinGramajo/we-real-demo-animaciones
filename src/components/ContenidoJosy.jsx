@@ -48,7 +48,7 @@ const ContenidoJosy = () => {
               type="submit"
               value="Send"
             >
-              <span className="text-black h5"> +34685531671</span>
+              <span className="text-black fs-18-a-14"> +34685531671</span>
             </a>
           </div>
         </article>
@@ -60,7 +60,7 @@ const ContenidoJosy = () => {
               type="submit"
               value="Send"
             >
-              <span className="text-black h5"> JOSY@WEREAL.ES</span>
+              <span className="text-black fs-18-a-14"> JOSY@WEREAL.ES</span>
             </div>
           </div>
         </article>

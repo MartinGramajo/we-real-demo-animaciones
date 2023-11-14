@@ -46,7 +46,7 @@ const ContenidoVictor = () => {
               type="submit"
               value="Send"
             >
-              <span className="text-black h5"> +34685531671</span>
+              <span className="text-black fs-18-a-14"> +34685531671</span>
             </a>
           </div>
         </article>
@@ -58,7 +58,7 @@ const ContenidoVictor = () => {
               type="submit"
               value="Send"
             >
-              <span className="text-black h5"> VICTOR@WEREAL.ES</span>
+              <span className="text-black fs-18-a-14"> VICTOR@WEREAL.ES</span>
             </div>
           </div>
         </article>
