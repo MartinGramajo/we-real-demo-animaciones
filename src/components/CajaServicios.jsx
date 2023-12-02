@@ -48,7 +48,7 @@ const CajaServicios = () => {
           <div className="btn-enviar d-flex justify-content-center ">
             <a
               className=" text-dark text-decoration-none"
-              href="https://www.wereal.com/"
+              href="https://www.grupowereal.com/"
               target="_blank"
               rel="noopener noreferrer"
             >

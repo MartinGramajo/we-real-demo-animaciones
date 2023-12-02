@@ -1,5 +1,5 @@
 import { Image } from "react-bootstrap";
-import banner from "../assets/img/puerto.jpg";
+import banner from "../assets/img/puerto.png";
 
 const BannerNew = () => {
   return (

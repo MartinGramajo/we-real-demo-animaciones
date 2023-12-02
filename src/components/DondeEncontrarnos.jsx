@@ -9,15 +9,16 @@ const DondeEncontrarnos = () => {
           <h1 className="texto-intermedacion">¿DÓNDE ENCONTRARNOS?</h1>
         </div>
       </div>
-      <div className="">
-        <a
-          className="text-decoration-none d-flex justify-content-center py-5"
-          target="_blank"
-          rel="noreferrer"
-          href="https://www.google.com/maps/place/WeReal+Grupo+Inmobiliario/@38.3416743,-0.4959143,17z/data=!4m6!3m5!1s0xd6237e52d1b22ef:0x2891174fc0f679e2!8m2!3d38.3416743!4d-0.4933394!16s%2Fg%2F11jxd905wr?entry=ttu"
-        >
-          <Image className="donde-map mb-4" src={donde} alt=" google maps" />
-        </a>
+      <div className="mt-5">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3129.3157079148796!2d-0.4959143!3d38.3416743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6237e52d1b22ef%3A0x2891174fc0f679e2!2sWeReal%20Grupo%20Inmobiliario!5e0!3m2!1ses-419!2sar!4v1701535119859!5m2!1ses-419!2sar"
+          width="100%"
+          height="650"
+          style={{ border: "0px" }}
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   );
