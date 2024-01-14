@@ -11,12 +11,12 @@ const Caja = () => {
           </div>
 
           <div className="col-lg-6 col-sm-12 pt-lg-5 pt-0 px-5 pb-5  d-flex flex-column justify-content-center text-center">
-            <h2
+            <h3
               className="texto-nuestros-servicios mx-5 my-4"
               style={{ zIndex: 2 }}
             >
-              CON NUESTROS SERVICIOS DE PLAN CREAR:
-            </h2>
+              CON NUESTRO SERVICIO DE ATENCIÓN PERSONALIZADA:
+            </h3>
             <div className="d-md-none d-block">
               <h5 className="text-white">
                 Podrás despejarte de todas las dudas posibles, cada situación en

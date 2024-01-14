@@ -56,9 +56,9 @@ const Situaciones = () => {
                     En todas estas situaciones, queremos que cuentes con
                     nosotros,
                     <br />
-                    porque podemos ayudarte con nuestro servicio de{" "}
-                    <b>PLAN CREAR</b>. Además, si quieres comprar la vivienda
-                    con nosotros tenemos <br />
+                    porque podemos ayudarte con nuestro servicio de atención
+                    personalizada. Además, si quieres comprar la vivienda con
+                    nosotros tenemos <br />
                     una amplia variedad de opciones. Puedes reservar <br />
                     la vivienda que te gusta y si por alguna razón, las opciones
                     <br /> que encontramos para tu hipoteca no te sirven, no te
