@@ -1,8 +1,16 @@
 import { Image } from "react-bootstrap";
 import victor from "../assets/img/victor.png";
 import banner from "../assets/img/banner-equipo.jpg";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos de AOS
 
 const ContenidoVictor = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.init();
+    }, 100); // Ajusta el tiempo según sea necesario
+  }, []);
   return (
     <div>
       <div className="d-flex justify-content-center">
@@ -21,9 +29,14 @@ const ContenidoVictor = () => {
       </div>
       <article className="text-white text-center container">
         <div>
-          <h3>VICTOR DABAT ARACIL </h3>
-          <h4> Asesor Inmobiliario - Ventas</h4>
-          <h5>
+          <h3 data-aos="fade-down" data-aos-delay="0">
+            VICTOR DABAT ARACIL{" "}
+          </h3>
+          <h4 data-aos="fade-down" data-aos-delay="200">
+            {" "}
+            Asesor Inmobiliario - Ventas
+          </h4>
+          <h5 data-aos="fade-down" data-aos-delay="400">
             Soy el "benjamín" del equipo y me definiría como una persona alegre,
             extrovertida, inquieta y con muchas ganas de aprender dìa a dìa para
             crecer tanto a nivel personal como profesional. Soy también una
@@ -37,7 +50,7 @@ const ContenidoVictor = () => {
         </div>
       </article>
       <div className="my-4 container">
-        <article className=" py-3">
+        <article data-aos="fade-right" data-aos-delay="600" className=" py-3">
           <div className="d-flex justify-content-center ">
             <a
               href="tel:+34685531671"
@@ -50,7 +63,7 @@ const ContenidoVictor = () => {
             </a>
           </div>
         </article>
-        <article className="  py-3">
+        <article data-aos="fade-left" data-aos-delay="800" className="  py-3">
           <div className="d-flex justify-content-center ">
             <div
               className="p-2 border-0 btn-enviar text-center"

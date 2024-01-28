@@ -19,6 +19,7 @@ const DondeEncontrarnos = () => {
       </div>
       <div className="mt-5">
         <iframe
+          title="Mapa de ubicación de la empresa"
           src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3129.3157079148796!2d-0.4959143!3d38.3416743!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6237e52d1b22ef%3A0x2891174fc0f679e2!2sWeReal%20Grupo%20Inmobiliario!5e0!3m2!1ses-419!2sar!4v1701535119859!5m2!1ses-419!2sar"
           width="100%"
           height="650"

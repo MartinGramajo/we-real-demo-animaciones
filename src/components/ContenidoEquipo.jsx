@@ -104,7 +104,7 @@ const ContenidoEquipo = () => {
       </article>
       <article
         data-aos="zoom-in"
-        data-aos-delay="450"
+        data-aos-delay="600"
         className="container bg-blanco padding-xy"
       >
         <Link className="text-decoration-none " to={"/Josy-Ribeiro-Da-Silva"}>
@@ -130,7 +130,7 @@ const ContenidoEquipo = () => {
       </article>
       <article
         data-aos="zoom-in"
-        data-aos-delay="500"
+        data-aos-delay="800"
         className="container bg-gris padding-xy"
       >
         <Link className="text-decoration-none " to={"/Javier-Pastor-Cobos"}>

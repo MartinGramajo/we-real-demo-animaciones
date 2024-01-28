@@ -1,8 +1,15 @@
 import { Image } from "react-bootstrap";
 import monica from "../assets/img/monica.png";
 import banner from "../assets/img/banner-equipo.jpg";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos de AOS
 const ContenidoMonica = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.init();
+    }, 100); // Ajusta el tiempo según sea necesario
+  }, []);
   return (
     <div>
       <div className="d-flex justify-content-center">
@@ -20,9 +27,14 @@ const ContenidoMonica = () => {
       </div>
       <article className="text-white text-center container">
         <div>
-          <h3>MÓNICA PORCHETO VELÀZQUEZ</h3>
-          <h4> Asesora Inmobiliaria - Capacitación</h4>
-          <h5>
+          <h3 data-aos="fade-down" data-aos-delay="0">
+            MÓNICA PORCHETO VELÀZQUEZ
+          </h3>
+          <h4 data-aos="fade-down" data-aos-delay="200">
+            {" "}
+            Asesora Inmobiliaria - Capacitación
+          </h4>
+          <h5 data-aos="fade-down" data-aos-delay="400">
             Me considero una persona pro-activa y con un alto nivel de
             autoexigencia, esta característica me lleva a querer aprender todos
             los días algo nuevo. Es para mi una satisfacción finalizar mi ida
@@ -36,7 +48,7 @@ const ContenidoMonica = () => {
         </div>
       </article>
       <div className="my-4 container">
-        <article className=" py-3">
+        <article data-aos="fade-right" data-aos-delay="600" className=" py-3">
           <div className="d-flex justify-content-center ">
             <a
               href="tel:+34685531671"
@@ -49,7 +61,7 @@ const ContenidoMonica = () => {
             </a>
           </div>
         </article>
-        <article className="  py-3">
+        <article data-aos="fade-left" data-aos-delay="800" className="  py-3">
           <div className="d-flex justify-content-center ">
             <div
               className="p-2 border-0 btn-enviar text-center"

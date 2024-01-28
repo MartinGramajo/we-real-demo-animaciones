@@ -1,8 +1,16 @@
 import { Image } from "react-bootstrap";
 import javier from "../assets/img/ja.png";
 import banner from "../assets/img/banner-equipo.jpg";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos de AOS
 
 const ContenidoJavier = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.init();
+    }, 100); // Ajusta el tiempo según sea necesario
+  }, []);
   return (
     <div>
       <div className="d-flex justify-content-center">
@@ -21,9 +29,14 @@ const ContenidoJavier = () => {
       </div>
       <article className="text-white text-center container">
         <div>
-          <h3>JAVIER PASTOR COBOS</h3>
-          <h4> Asesor Inmobiliario - Ventas</h4>
-          <h5 className="py-5">
+          <h3 data-aos="fade-down" data-aos-delay="0">
+            JAVIER PASTOR COBOS
+          </h3>
+          <h4 data-aos="fade-down" data-aos-delay="200">
+            {" "}
+            Asesor Inmobiliario - Ventas
+          </h4>
+          <h5 data-aos="fade-down" data-aos-delay="400" className="py-5">
             ¿Cuál es su secreto para el éxito? ¡El aprendizaje constante y la
             curiosidad que lo impulsan a superarse cada día! Javier es un
             orgulloso asociado de INMOADAL, y también un agente de seguros de
@@ -41,7 +54,7 @@ const ContenidoJavier = () => {
         </div>
       </article>
       <div className="my-4 container">
-        <article className=" py-3">
+        <article data-aos="fade-right" data-aos-delay="600" className=" py-3">
           <div className="d-flex justify-content-center ">
             <a
               href="tel:+34685531671"
@@ -54,7 +67,7 @@ const ContenidoJavier = () => {
             </a>
           </div>
         </article>
-        <article className="  py-3">
+        <article data-aos="fade-left" data-aos-delay="800" className="  py-3">
           <div className="d-flex justify-content-center ">
             <div
               className="p-2 border-0 btn-enviar text-center"
