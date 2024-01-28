@@ -1,12 +1,20 @@
-import { Image } from "react-bootstrap";
-import donde from "../assets/img/mapa.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos de AOS
 
 const DondeEncontrarnos = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.init();
+    }, 100); // Ajusta el tiempo según sea necesario
+  }, []);
   return (
     <div>
       <div className="text-center text-white">
         <div className="text-center py-5  bg-azul-situaciones text-white">
-          <h1 className="texto-intermedacion">¿DÓNDE ENCONTRARNOS?</h1>
+          <h1 data-aos="fade-down" className="texto-intermedacion">
+            ¿DÓNDE ENCONTRARNOS?
+          </h1>
         </div>
       </div>
       <div className="mt-5">

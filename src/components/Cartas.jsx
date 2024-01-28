@@ -2,12 +2,25 @@ import { Card, Image } from "react-bootstrap";
 import ahorros from "../assets/img/ahorros.png";
 import conocimientos from "../assets/img/conocimiento.png";
 import financiar from "../assets/img/financiar.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos de AOS
 
 export default function Cartas() {
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.init();
+    }, 100); // Ajusta el tiempo según sea necesario
+  }, []);
+
   return (
     <div className="py-5  container animate__animated  animate__backInLeft">
       <div className="cartas  ">
-        <Card className="carta cartas-gradiente text-white ">
+        <Card
+          data-aos="zoom-in"
+          data-aos-delay="0"
+          className="carta cartas-gradiente text-white "
+        >
           <Card.Body className="d-flex flex-column justify-content-evenly mx-3">
             <Card.Title className="text-center">
               <Image className="w-50" src={ahorros} fluid alt="icono okay" />
@@ -17,7 +30,11 @@ export default function Cartas() {
             </Card.Subtitle>
           </Card.Body>
         </Card>
-        <Card className="carta cartas-gradiente text-white">
+        <Card
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          className="carta cartas-gradiente text-white"
+        >
           <Card.Body className="d-flex flex-column justify-content-evenly mx-3">
             <Card.Title className="text-center">
               <Image
@@ -33,7 +50,11 @@ export default function Cartas() {
             </Card.Subtitle>
           </Card.Body>
         </Card>
-        <Card className="carta cartas-gradiente text-white">
+        <Card
+          data-aos="zoom-in"
+          data-aos-delay="400"
+          className="carta cartas-gradiente text-white"
+        >
           <Card.Body className="d-flex flex-column justify-content-evenly mx-3">
             <Card.Title className="text-center">
               <Image className="w-50" src={financiar} fluid alt="icono okay" />

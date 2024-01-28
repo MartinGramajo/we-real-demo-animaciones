@@ -1,16 +1,28 @@
 import { Image } from "react-bootstrap";
 import etiqueta from "../assets/img/etiqueta.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos de AOS
 
 const Situaciones = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.init();
+    }, 100); // Ajusta el tiempo según sea necesario
+  }, []);
   return (
     <div className="bg-azul-situaciones mb-4 ">
       <div className="container text-white">
         <div>
-          <div className="py-5 mb-4 text-center">
+          <div
+            data-aos="fade-down"
+            data-aos-delay="0"
+            className="py-5 mb-4 text-center"
+          >
             <h2>Situaciones en las que posiblemente te encuentres:</h2>
           </div>
           <div className="row">
-            <div className="col-12 col-lg-6 pb-5">
+            <div data-aos="fade-up" className="col-12 col-lg-6 pb-5">
               <article className="d-flex">
                 <div className="me-3">
                   <Image
@@ -41,7 +53,11 @@ const Situaciones = () => {
                 </div>
               </article>
             </div>
-            <div className="col-12 col-lg-6 pb-5">
+            <div
+              data-aos="fade-up"
+              data-aos-delay="200"
+              className="col-12 col-lg-6 pb-5"
+            >
               <article className="d-flex">
                 <div className="me-3">
                   <Image

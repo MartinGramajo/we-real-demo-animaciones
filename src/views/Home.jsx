@@ -9,14 +9,22 @@ import QuieroVender from "../components/QuieroVender";
 import Situaciones from "../components/Situaciones";
 import SliderEquipo from "../components/SliderEquipo";
 import Wsp from "../components/Wsp";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos de AOS
 
 const Home = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.init();
+    }, 100); // Ajusta el tiempo según sea necesario
+  }, []);
   return (
     <div>
       <BannerNew />
       <QuieroVender />
       <div className="text-center py-5 my-5 bg-azul-situaciones text-white">
-        <h1 className="texto-intermedacion">
+        <h1 data-aos="fade-down" className="texto-intermedacion">
           INTERMEDIACIÓN FINANCIERA - HIPOTECAS
         </h1>
       </div>
@@ -28,7 +36,9 @@ const Home = () => {
 
       <CanalYoutube />
       <div className="text-center py-5 my-5 bg-azul-situaciones text-white">
-        <h1 className="texto-intermedacion">CONTACTANOS</h1>
+        <h1 data-aos="fade-down" className="texto-intermedacion">
+          CONTACTANOS
+        </h1>
       </div>
       <FormContacto />
       <Wsp />
