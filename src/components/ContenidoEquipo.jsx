@@ -6,11 +6,24 @@ import monica from "../assets/img/monica.png";
 import josy from "../assets/img/jasy.png";
 import javier from "../assets/img/ja.png";
 import presentacion from "../assets/img/presentacion.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos de AOS
 
 const ContenidoEquipo = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.init();
+    }, 100); // Ajusta el tiempo según sea necesario
+  }, []);
+
   return (
     <div className="my-5">
-      <article className="container bg-gris py-5">
+      <article
+        data-aos="zoom-in"
+        data-aos-delay="0"
+        className="container bg-gris padding-xy"
+      >
         <Link className="text-decoration-none " to={"/Andres-Broullon"}>
           <div className="d-flex">
             <Image
@@ -34,7 +47,11 @@ const ContenidoEquipo = () => {
           </div>
         </Link>
       </article>
-      <article className="container bg-blanco py-5">
+      <article
+        data-aos="zoom-in"
+        data-aos-delay="200"
+        className="container bg-blanco padding-xy"
+      >
         <Link className="text-decoration-none " to={"/Victor-Dabat-Aracil"}>
           <div className="d-flex">
             <Image
@@ -56,7 +73,11 @@ const ContenidoEquipo = () => {
           </div>
         </Link>
       </article>
-      <article className="container bg-gris py-5">
+      <article
+        data-aos="zoom-in"
+        data-aos-delay="400"
+        className="container bg-gris padding-xy"
+      >
         <Link
           className="text-decoration-none "
           to={"/Monica-Porchetto-Velazquez"}
@@ -81,7 +102,11 @@ const ContenidoEquipo = () => {
           </div>
         </Link>
       </article>
-      <article className="container bg-blanco py-5">
+      <article
+        data-aos="zoom-in"
+        data-aos-delay="450"
+        className="container bg-blanco padding-xy"
+      >
         <Link className="text-decoration-none " to={"/Josy-Ribeiro-Da-Silva"}>
           <div className="d-flex">
             <Image
@@ -103,7 +128,11 @@ const ContenidoEquipo = () => {
           </div>
         </Link>
       </article>
-      <article className="container bg-gris py-5">
+      <article
+        data-aos="zoom-in"
+        data-aos-delay="500"
+        className="container bg-gris padding-xy"
+      >
         <Link className="text-decoration-none " to={"/Javier-Pastor-Cobos"}>
           <div className="d-flex">
             <Image
