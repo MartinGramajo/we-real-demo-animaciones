@@ -14,7 +14,11 @@ const CajaProceso = () => {
     <div className="text-white">
       <div className="">
         <div className="text-center py-5 my-5 bg-azul-situaciones text-white">
-          <h1 data-aos="fade-down" className="texto-intermedacion">
+          <h1
+            data-aos="fade-down"
+            data-aos-delay="0"
+            className="texto-intermedacion"
+          >
             {" "}
             INTERMEDIACIÓN FINANCIERA
           </h1>
@@ -23,6 +27,7 @@ const CajaProceso = () => {
           <div className="row ">
             <div
               data-aos="fade-right"
+              data-aos-delay="200"
               className="col-lg-6 col-sm-12 pt-lg-5 pt-0 px-5 pb-5  d-flex flex-column justify-content-center "
             >
               <h3 className=" pt-4" style={{ zIndex: 2 }} id="intermediacion">
@@ -60,6 +65,7 @@ const CajaProceso = () => {
             </div>
             <div
               data-aos="fade-left"
+              data-aos-delay="400"
               className="col-lg-6 col-sm-12 text-center d-flex align-items-center justify-content-center"
             >
               <Image className="" src={caja} alt="caja" fluid />
