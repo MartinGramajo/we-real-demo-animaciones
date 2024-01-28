@@ -24,7 +24,11 @@ const Home = () => {
       <BannerNew />
       <QuieroVender />
       <div className="text-center py-5 my-5 bg-azul-situaciones text-white">
-        <h1 data-aos="fade-down" className="texto-intermedacion">
+        <h1
+          data-aos="fade-down"
+          data-aos-delay="0"
+          className="texto-intermedacion"
+        >
           INTERMEDIACIÓN FINANCIERA - HIPOTECAS
         </h1>
       </div>
