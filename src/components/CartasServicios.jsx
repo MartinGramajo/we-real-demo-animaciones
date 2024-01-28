@@ -2,13 +2,25 @@ import { Image } from "react-bootstrap";
 import icono1 from "../assets/img/familia.png";
 import icono2 from "../assets/img/empresario.png";
 import icono3 from "../assets/img/empresa.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos de AOS
 
 const CartasServicios = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.init();
+    }, 100); // Ajusta el tiempo según sea necesario
+  }, []);
   return (
     <div>
       <article className="container text-white">
         <div className="row  text-center my-5">
-          <div className="col-12 col-md-6 col-lg-4">
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="0"
+            className="col-12 col-md-6 col-lg-4"
+          >
             <div>
               <div className=" d-flex align-items-center justify-content-center">
                 <Image
@@ -28,7 +40,11 @@ const CartasServicios = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4">
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            className="col-12 col-md-6 col-lg-4"
+          >
             <div>
               <div className=" d-flex align-items-center justify-content-center">
                 <Image
@@ -47,7 +63,11 @@ const CartasServicios = () => {
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-6 col-lg-4 ">
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            className="col-12 col-md-6 col-lg-4 "
+          >
             <div>
               <div className=" d-flex align-items-center justify-content-center">
                 <Image

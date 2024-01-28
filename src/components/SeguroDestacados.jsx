@@ -1,13 +1,27 @@
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos de AOS
+
 const SegurosDestacados = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.init();
+    }, 100); // Ajusta el tiempo según sea necesario
+  }, []);
+
   return (
     <div className="bg-azul-situaciones mb-4">
       <div className="container text-white">
         <div>
-          <div className="py-5 text-center">
+          <div data-aos="fade-up" className="py-5 text-center">
             <h2>Entre nuestros seguros destacados:</h2>
           </div>
           <div className="row">
-            <div className="col-12 col-lg-4 pb-5">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="400"
+              className="col-12 col-lg-4 pb-5"
+            >
               <article className="d-flex text-center">
                 <div>
                   <h5>
@@ -19,7 +33,11 @@ const SegurosDestacados = () => {
                 </div>
               </article>
             </div>
-            <div className="col-12 col-lg-4 pb-5">
+            <div
+              data-aos="zoom-in"
+              data-aos-delay="200"
+              className="col-12 col-lg-4 pb-5"
+            >
               <article className="d-flex text-center">
                 <div>
                   <h5>
@@ -32,7 +50,11 @@ const SegurosDestacados = () => {
               </article>
             </div>
             <div className="col-12 col-lg-4 pb-5">
-              <article className="d-flex text-center">
+              <article
+                data-aos="zoom-in"
+                data-aos-delay="0"
+                className="d-flex text-center"
+              >
                 <div>
                   <h5>
                     <b>Seguros para móviles:</b> <br /> Para todas las marcas y

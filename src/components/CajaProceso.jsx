@@ -1,16 +1,30 @@
 import { Image } from "react-bootstrap";
 import caja from "../assets/img/caja.png";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css"; // Importa los estilos de AOS
 
 const CajaProceso = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      AOS.init();
+    }, 100); // Ajusta el tiempo según sea necesario
+  }, []);
   return (
     <div className="text-white">
       <div className="">
         <div className="text-center py-5 my-5 bg-azul-situaciones text-white">
-          <h1 className="texto-intermedacion"> INTERMEDIACIÓN FINANCIERA</h1>
+          <h1 data-aos="fade-down" className="texto-intermedacion">
+            {" "}
+            INTERMEDIACIÓN FINANCIERA
+          </h1>
         </div>
         <article className="container">
           <div className="row ">
-            <div className="col-lg-6 col-sm-12 pt-lg-5 pt-0 px-5 pb-5  d-flex flex-column justify-content-center ">
+            <div
+              data-aos="fade-right"
+              className="col-lg-6 col-sm-12 pt-lg-5 pt-0 px-5 pb-5  d-flex flex-column justify-content-center "
+            >
               <h3 className=" pt-4" style={{ zIndex: 2 }} id="intermediacion">
                 ¿CÓMO ES EL PROCESO?
               </h3>
@@ -44,7 +58,10 @@ const CajaProceso = () => {
                 <h4>LLEGO EL MOMENTO DE FESTEJAR!!! </h4>
               </div>
             </div>
-            <div className="col-lg-6 col-sm-12 text-center d-flex align-items-center justify-content-center">
+            <div
+              data-aos="fade-left"
+              className="col-lg-6 col-sm-12 text-center d-flex align-items-center justify-content-center"
+            >
               <Image className="" src={caja} alt="caja" fluid />
             </div>
           </div>
