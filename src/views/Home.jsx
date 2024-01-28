@@ -40,7 +40,11 @@ const Home = () => {
 
       <CanalYoutube />
       <div className="text-center py-5 my-5 bg-azul-situaciones text-white">
-        <h1 data-aos="fade-down" className="texto-intermedacion">
+        <h1
+          data-aos="fade-down"
+          data-aos-delay="200"
+          className="texto-intermedacion"
+        >
           CONTACTANOS
         </h1>
       </div>
