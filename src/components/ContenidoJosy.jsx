@@ -52,7 +52,7 @@ const ContenidoJosy = () => {
         </div>
       </article>
       <div className="my-4 container">
-        <article data-aos="fade-right" data-aos-delay="600" className=" py-3">
+        <article data-aos="fade-up" data-aos-delay="600" className=" py-3">
           <div className="d-flex justify-content-center ">
             <a
               href="tel:+34685531671"
@@ -65,7 +65,7 @@ const ContenidoJosy = () => {
             </a>
           </div>
         </article>
-        <article data-aos="fade-left" data-aos-delay="800" className="  py-3">
+        <article data-aos="fade-up" data-aos-delay="800" className="  py-3">
           <div className="d-flex justify-content-center ">
             <div
               className="p-2 border-0 btn-enviar text-center"

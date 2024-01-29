@@ -26,7 +26,7 @@ const CajaProceso = () => {
         <article className="container">
           <div className="row ">
             <div
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-delay="200"
               className="col-lg-6 col-sm-12 pt-lg-5 pt-0 px-5 pb-5  d-flex flex-column justify-content-center "
             >
@@ -64,7 +64,7 @@ const CajaProceso = () => {
               </div>
             </div>
             <div
-              data-aos="fade-left"
+              data-aos="fade-up"
               data-aos-delay="400"
               className="col-lg-6 col-sm-12 text-center d-flex align-items-center justify-content-center"
             >

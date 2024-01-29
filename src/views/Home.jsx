@@ -37,7 +37,6 @@ const Home = () => {
       <Caja />
       <SliderEquipo />
       <DondeEncontrarnos />
-
       <CanalYoutube />
       <div className="text-center py-5 my-5 bg-azul-situaciones text-white">
         <h1
