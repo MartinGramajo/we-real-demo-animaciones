@@ -5,8 +5,13 @@ import insta from "../../assets/img/insta.png";
 import youtube from "../../assets/img/youtube.png";
 import linken from "../../assets/img/linken.png";
 import logoNav from "../../assets/img/logoNav.png";
+import { useState } from "react";
 
 const NavReact = () => {
+  function cerrar() {
+    let navbar = document.querySelector(".navbar-toggler");
+    navbar.click();
+  }
   return (
     <div className="my-5">
       <Navbar expand="lg" variant="light" sticky="top" className="bg-light">
@@ -22,7 +27,8 @@ const NavReact = () => {
               <Nav.Link
                 to="/"
                 as={NavLink}
-                className="tamaño-medium ms-auto color-blanco mx-xl-2 my-auto nav-links"
+                onClick={cerrar}
+                className="tamaño-medium ms-auto color-blanco mx-xl-2 my-auto nav-links "
               >
                 INICIO
               </Nav.Link>
@@ -30,6 +36,7 @@ const NavReact = () => {
               <Nav.Link
                 to="/servicios"
                 as={NavLink}
+                onClick={cerrar}
                 className="tamaño-medium ms-auto color-blanco mx-xl-2 my-auto nav-links"
               >
                 SERVICIOS
@@ -37,6 +44,7 @@ const NavReact = () => {
               <Nav.Link
                 to="/equipo"
                 as={NavLink}
+                onClick={cerrar}
                 className="tamaño-medium ms-auto color-blanco mx-xl-2 my-auto nav-links"
               >
                 EQUIPO
