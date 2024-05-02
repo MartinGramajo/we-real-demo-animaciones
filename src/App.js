@@ -13,17 +13,14 @@ import Josy from "./views/Josy";
 import Contacto from "./views/Contacto";
 import ScrollToTop from "./components/ScrollToTop";
 
-
 function App() {
-
-
-
   return (
     <div className="d-flex flex-column min-vh-100 bg-app">
       <HashRouter>
         <NavReact />
         <ScrollToTop />
         <Routes>
+
           <Route exact path="/" element={<Home />} />
           <Route exact path="/servicios" element={<Servicios />} />
           <Route exact path="/contacto" element={<Contacto />} />

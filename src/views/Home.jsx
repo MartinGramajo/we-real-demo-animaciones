@@ -9,9 +9,11 @@ import QuieroVender from "../components/QuieroVender";
 import Situaciones from "../components/Situaciones";
 import SliderEquipo from "../components/SliderEquipo";
 import Wsp from "../components/Wsp";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Importa los estilos de AOS
+import CookieModal from "../components/CookieModal";
+import CookieConfigModal from "../components/CookieConfigModal";
 
 const Home = () => {
   useEffect(() => {
@@ -19,8 +21,16 @@ const Home = () => {
       AOS.init();
     }, 100); // Ajusta el tiempo según sea necesario
   }, []);
+  const [showConfig, setShowConfig] = useState(false);
+
   return (
     <div>
+      <div>
+        <CookieModal onConfigure={() => setShowConfig(false)} />
+        {showConfig && (
+          <CookieConfigModal onClose={() => setShowConfig(false)} />
+        )}
+      </div>
       <BannerNew />
       <QuieroVender />
       <div className="text-center py-5 my-5 bg-azul-situaciones text-white">

@@ -6,7 +6,7 @@ const Wsp = () => {
     <div className="d-flex justify-content-center text-white py-5">
       <a
         className="text-decoration-none"
-        href="https://wa.link/g5fm8w"
+        href="https://wa.link/v22wuj"
         target="_blank"
         rel="noopener noreferrer"
       >
