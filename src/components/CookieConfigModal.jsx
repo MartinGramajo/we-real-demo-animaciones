@@ -7,32 +7,27 @@ function CookieConfigModal({ onClose }) {
         <span className="close" onClick={onClose}>
           &times;
         </span>
-        <h2>CONFIGURACIÓN de COOKIES</h2>
-        <p>Aquí puedes ajustar tus preferencias de cookies.</p>
-        <div className="buttons">
-          <button
-            onClick={() => {
-              console.log("Cookies Analíticas ajustadas");
-              onClose();
-            }}
+        <section className="bg-secondary">
+          <h6
+            className="text-center mt-1 text-white"
+            style={{ fontSize: "18px" }}
           >
-            Configurar Analíticas
+            CONFIGURACIÓN de COOKIES
+          </h6>
+        </section>
+
+        <h6 className="py-4" style={{ fontSize: "16px" }}>
+          Aquí puedes ajustar tus preferencias de cookies.
+        </h6>
+        <div className="d-flex justify-content-center">
+          <button className="boton-modal-cookies " onClick={onClose}>
+            Aceptar Cookies Analíticas
           </button>
-          <button
-            onClick={() => {
-              console.log("Cookies de Publicidad ajustadas");
-              onClose();
-            }}
-          >
-            Configurar Publicidad
+          <button className="boton-modal-cookies " onClick={onClose}>
+            Aceptar Cookies de Publicidad
           </button>
-          <button
-            onClick={() => {
-              console.log("Cookies Necesarias confirmadas");
-              onClose();
-            }}
-          >
-            Confirmar Necesarias
+          <button className="boton-modal-cookies " onClick={onClose}>
+            Aceptar solo Cookies Necesarias
           </button>
         </div>
       </div>

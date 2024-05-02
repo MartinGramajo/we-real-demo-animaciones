@@ -21,12 +21,13 @@ const Home = () => {
       AOS.init();
     }, 100); // Ajusta el tiempo según sea necesario
   }, []);
+
   const [showConfig, setShowConfig] = useState(false);
 
   return (
     <div>
       <div>
-        <CookieModal onConfigure={() => setShowConfig(false)} />
+        <CookieModal onConfigure={() => setShowConfig(!showConfig)} />
         {showConfig && (
           <CookieConfigModal onClose={() => setShowConfig(false)} />
         )}

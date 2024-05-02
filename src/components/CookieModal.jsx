@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 function CookieModal({ onConfigure }) {
   // Inicializa isVisible basado en si las preferencias de cookies están ya guardadas
