@@ -49,7 +49,7 @@ export default function FormContacto() {
         noValidate
         validated={validated}
         onSubmit={sendEmail}
-        className="mx-auto form mb-5 p-2 text-white "
+        className="mx-auto form mb-5 p-2  "
       >
         <div>
           <div className="card-body">
@@ -60,9 +60,7 @@ export default function FormContacto() {
                 md="12"
                 controlId="validationCustom03"
               >
-                <Form.Label className="text-white tamaño-medio">
-                  Nombre*
-                </Form.Label>
+                <Form.Label className=" tamaño-medio">Nombre*</Form.Label>
                 <Form.Control type="text" required name="name" />
                 <Form.Control.Feedback type="invalid">
                   Ingrese su nombre completo por favor.
@@ -71,7 +69,7 @@ export default function FormContacto() {
             </Row>
             <Row>
               <Form.Group as={Col} md="12" controlId="validationCustom04">
-                <Form.Label className="text-white mt-2 tamaño-medio">
+                <Form.Label className=" mt-2 tamaño-medio">
                   Whatsapp*
                 </Form.Label>
                 <Form.Control
@@ -85,9 +83,7 @@ export default function FormContacto() {
                 </Form.Control.Feedback>
               </Form.Group>
               <Form.Group as={Col} md="12" controlId="validationCustom03">
-                <Form.Label className="text-white mt-2 tamaño-medio">
-                  Email*
-                </Form.Label>
+                <Form.Label className=" mt-2 tamaño-medio">Email*</Form.Label>
                 <Form.Control type="email" required name="email" />
                 <Form.Control.Feedback type="invalid">
                   Ingrese su Email por favor.
@@ -96,13 +92,11 @@ export default function FormContacto() {
             </Row>
             <Row className="mb-4">
               <Form.Group as={Col} md="12" controlId="validationCustom03">
-                <Form.Label className="text-white mt-2  tamaño-medio">
-                  Mensaje
-                </Form.Label>
+                <Form.Label className=" mt-2  tamaño-medio">Mensaje</Form.Label>
                 <InputGroup>
                   <Form.Control className="mb-2" as="textarea" name="msj" />
                 </InputGroup>
-                <span className="mt-1 text-white tamaño-medio">
+                <span className="mt-1  tamaño-medio">
                   * Campos obligatorios
                 </span>
               </Form.Group>
@@ -141,6 +135,23 @@ export default function FormContacto() {
                   type="checkbox"
                   label="Otra consulta"
                   name="consulta"
+                />
+              </Form.Group>
+            </Row>
+            <Row className="d-flex justify-content-center pt-5">
+              <Form.Group as={Col} md="12">
+                <Form.Check
+                  required
+                  type="checkbox"
+                  label="Consiento el uso de mis datos para los fines indicados en la POLÍTICA de PRIVACIDAD."
+                  name="politicaPrivacidad"
+                />
+              </Form.Group>
+              <Form.Group as={Col} md="12">
+                <Form.Check
+                  type="checkbox"
+                  label="Consiento el uso de mis datos personales para recibir publicidad de su entidad."
+                  name="usoDatosPersonales"
                 />
               </Form.Group>
             </Row>
