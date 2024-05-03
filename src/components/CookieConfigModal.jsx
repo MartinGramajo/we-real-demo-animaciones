@@ -24,7 +24,7 @@ function CookieConfigModal({ onClose }) {
             Aceptar Cookies Analíticas
           </button>
           <button className="boton-modal-cookies " onClick={onClose}>
-            Aceptar Cookies de Publicidad
+            Aceptar Cookies tecnicas
           </button>
           <button className="boton-modal-cookies " onClick={onClose}>
             Aceptar solo Cookies Necesarias

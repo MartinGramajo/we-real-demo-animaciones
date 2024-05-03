@@ -184,7 +184,13 @@ const PoliticaDeCookies = () => {
           permiten estudiar la navegación de los usuarios de nuestra página web
           en general (por ejemplo, qué secciones de la página son las más
           visitadas, qué servicios se usan más y si funcionan correctamente,
-          etc.).
+          etc.). <br />- <strong> Cookies Técnicas</strong> : Las cookies
+          técnicas son estrictamente necesarias para que nuestra página web
+          funcione y puedas navegar por la misma. Este tipo de cookies son las
+          que, por ejemplo, nos permiten identificarte, darte acceso a
+          determinadas partes restringidas de la página si fuese necesario, o
+          recordar diferentes opciones o servicios ya seleccionados por ti, como
+          tus preferencias de privacidad.
         </p>
         <h6>¿QUÉ PUEDES HACER CON LAS COOKIES?</h6>
         <p>

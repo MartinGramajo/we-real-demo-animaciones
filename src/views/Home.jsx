@@ -14,7 +14,6 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Importa los estilos de AOS
 import CookieModal from "../components/CookieModal";
 import CookieConfigModal from "../components/CookieConfigModal";
-import BreveInformacion from "../components/BreveInformacion";
 import TablaProteccionDatos from "../components/TablaProteccionDatos";
 
 const Home = () => {
