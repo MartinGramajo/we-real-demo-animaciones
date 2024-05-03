@@ -1,4 +1,5 @@
 import FormContacto from "../components/FormContacto";
+import Inmoadal from "../components/Inmoadal";
 import QuieroVender from "../components/QuieroVender";
 
 const Contacto = () => {
@@ -9,6 +10,7 @@ const Contacto = () => {
       </div>
       <QuieroVender />
       <FormContacto />
+      <Inmoadal />
     </div>
   );
 };

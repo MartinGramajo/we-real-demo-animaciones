@@ -12,6 +12,10 @@ import Javier from "./views/Javier";
 import Josy from "./views/Josy";
 import Contacto from "./views/Contacto";
 import ScrollToTop from "./components/ScrollToTop";
+import AvisoLegal from "./views/AvisoLegal";
+import CompromisoProteccion from "./views/CompromisoProteccion";
+import PoliticasPrivacidad from "./views/PoliticasPrivacidad";
+import PoliticaDeCookies from "./views/PoliticaDeCookies";
 
 function App() {
   return (
@@ -34,6 +38,10 @@ function App() {
           />
           <Route exact path="/Josy-Ribeiro-Da-Silva" element={<Josy />} />
           <Route exact path="/Javier-Pastor-Cobos" element={<Javier />} />
+          <Route exact path="/aviso-legal" element={<AvisoLegal />} />
+          <Route exact path="/politicas-de-privacidad" element={<PoliticasPrivacidad />} />
+          <Route exact path="/compromiso-de-proteccion" element={<CompromisoProteccion />} />
+          <Route exact path="/politicas-de-cookies" element={<PoliticaDeCookies />} />
         </Routes>
       </HashRouter>
       <Footer />

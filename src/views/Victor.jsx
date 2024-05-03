@@ -1,5 +1,6 @@
 import BtnRegresar from "../components/BtnRegresar";
 import ContenidoVictor from "../components/ContenidoVictor";
+import Inmoadal from "../components/Inmoadal";
 
 const Victor = () => {
   return (
@@ -8,6 +9,7 @@ const Victor = () => {
       <div className="mb-5">
         <BtnRegresar />
       </div>
+      <Inmoadal />
     </section>
   );
 };

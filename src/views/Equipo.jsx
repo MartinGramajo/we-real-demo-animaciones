@@ -1,6 +1,7 @@
 import BtnRegresar from "../components/BtnRegresar";
 import ContenidoEquipo from "../components/ContenidoEquipo";
 import ImageCarousel from "../components/ImagenCarousel";
+import Inmoadal from "../components/Inmoadal";
 import QuieroVender from "../components/QuieroVender";
 
 const Equipo = () => {
@@ -12,6 +13,7 @@ const Equipo = () => {
       <div className="my-5 ">
         <BtnRegresar />
       </div>
+      <Inmoadal />
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import BtnRegresar from "../components/BtnRegresar";
 import ContenidoMonica from "../components/ContenidoMonica";
+import Inmoadal from "../components/Inmoadal";
 
 const Monica = () => {
   return (
@@ -8,6 +9,7 @@ const Monica = () => {
       <div className="mb-5">
         <BtnRegresar />
       </div>
+      <Inmoadal />
     </div>
   );
 };
