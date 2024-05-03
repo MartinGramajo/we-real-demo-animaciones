@@ -24,19 +24,25 @@ const Inmoadal = () => {
           </Link>
         </div>
         <div>
-          <Link to="/politicas-de-privacidad">POLÍTICA DE PRIVACIDAD</Link>
+          <Link to="/politicas-de-privacidad" className="text-white">
+            POLÍTICA DE PRIVACIDAD
+          </Link>
         </div>
         <div>
-          <Link to="/compromiso-de-proteccion">
+          <Link to="/compromiso-de-proteccion" className="text-white">
             {" "}
             COMPROMISO DE PROTECCIÓN DE DATOS{" "}
           </Link>
         </div>
         <div>
-          <Link to="/politicas-de-cookies"> POLÍTICA DE COOKIES</Link>
+          <Link to="/politicas-de-cookies" className="text-white">
+            {" "}
+            POLÍTICA DE COOKIES
+          </Link>
         </div>
         <div>
           <a
+            className="text-white"
             href="https://wereal.canales-eticos.com/#/"
             target="_blank"
             rel="noreferrer"
