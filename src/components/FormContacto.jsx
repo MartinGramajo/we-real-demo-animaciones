@@ -138,7 +138,7 @@ export default function FormContacto() {
                 />
               </Form.Group>
             </Row>
-            <Row className="d-flex justify-content-center pt-5">
+            <Row className="d-flex justify-content-center pt-2">
               <Form.Group as={Col} md="12">
                 <Form.Check
                   required

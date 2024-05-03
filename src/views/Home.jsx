@@ -14,6 +14,8 @@ import AOS from "aos";
 import "aos/dist/aos.css"; // Importa los estilos de AOS
 import CookieModal from "../components/CookieModal";
 import CookieConfigModal from "../components/CookieConfigModal";
+import BreveInformacion from "../components/BreveInformacion";
+import TablaProteccionDatos from "../components/TablaProteccionDatos";
 
 const Home = () => {
   useEffect(() => {
@@ -58,7 +60,16 @@ const Home = () => {
           CONTACTANOS
         </h1>
       </div>
-      <FormContacto />
+      <section className="container">
+        <article className="row">
+          <div className="col-lg-6 col-12">
+            <TablaProteccionDatos />
+          </div>
+          <div className="col-lg-6 col-12">
+            <FormContacto />
+          </div>
+        </article>
+      </section>
       <Wsp />
       <Inmoadal />
     </div>
