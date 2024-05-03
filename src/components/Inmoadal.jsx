@@ -18,19 +18,22 @@ const Inmoadal = () => {
       </div>
       <div className="py-5">
         <div>
-          <Link to="/aviso-legal"> Aviso Legal</Link>
+          <Link to="/aviso-legal" className="text-white">
+            {" "}
+            AVISO LEGAL
+          </Link>
         </div>
         <div>
-          <Link to="/politicas-de-privacidad"> Política de Privacidad</Link>
+          <Link to="/politicas-de-privacidad">POLÍTICA DE PRIVACIDAD</Link>
         </div>
         <div>
           <Link to="/compromiso-de-proteccion">
             {" "}
-            Compromiso de Protección de Datos{" "}
+            COMPROMISO DE PROTECCIÓN DE DATOS{" "}
           </Link>
         </div>
         <div>
-          <Link to="/politicas-de-cookies"> Política de Cookies</Link>
+          <Link to="/politicas-de-cookies"> POLÍTICA DE COOKIES</Link>
         </div>
         <div>
           <a
@@ -38,7 +41,7 @@ const Inmoadal = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Canal Ético
+            CANAL ÉTICO
           </a>
         </div>
       </div>
