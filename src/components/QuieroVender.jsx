@@ -1,6 +1,6 @@
 import { Image } from "react-bootstrap";
 import { useState } from "react";
-import quiero from "../assets/img/quiero-vender.png";
+import quiero from "../assets/img/vengaVendaNavegue.png";
 import { Link } from "react-router-dom";
 
 export default function QuieroVender() {

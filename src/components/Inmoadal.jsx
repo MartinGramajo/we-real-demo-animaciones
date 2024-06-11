@@ -5,11 +5,11 @@ import { Link } from "react-router-dom";
 
 const Inmoadal = () => {
   return (
-    <div className="d-flex justify-content-around text-white bg-azul-situaciones">
+    <div className="d-flex justify-content-around flex-wrap text-white bg-azul-situaciones">
       <div>
         {" "}
         <Image
-          style={{ width: "200px" }}
+          style={{ width: "140px" }}
           className="py-5"
           src={logo}
           alt="wsp"
