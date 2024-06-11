@@ -51,7 +51,7 @@ body {
 }
 
 .bg-app {
-  background-color: #eecb06dc !important;
+  background-color: #eecc10dc !important;
 }
 
 .centrado {
@@ -664,7 +664,7 @@ body {
   }
 } */
 .icono-reserva {
-  width: 230px;
+  width: 150px;
   transition: width 0.5s;
 }
 
