@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "./static/css/main.58ca0352.css",
+    "main.js": "./static/js/main.b9d0f521.js",
+    "static/js/787.6980fdeb.chunk.js": "./static/js/787.6980fdeb.chunk.js",
+    "static/media/puerto.png": "./static/media/puerto.6353d51a2eaf5346cee7.png",
+    "static/media/banner4.png": "./static/media/banner4.0e473c2adc923a004cd0.png",
+    "static/media/banner3.png": "./static/media/banner3.432d4bb73fe4ebe40557.png",
+    "static/media/equipo.png": "./static/media/equipo.87de99568c7fd684e071.png",
+    "static/media/banner2.png": "./static/media/banner2.22bc85457c481e25cae5.png",
+    "static/media/banner1.png": "./static/media/banner1.b6c0e2c43ce6dd8e7ec4.png",
+    "static/media/caja.png": "./static/media/caja.98f7e7ef6e4710e1ee67.png",
+    "static/media/jasy.png": "./static/media/jasy.a45eae790987dcc1499c.png",
+    "static/media/andres.png": "./static/media/andres.4af70b91dfcbd9d052b0.png",
+    "static/media/victor.png": "./static/media/victor.14c1c1d2dc681ccfab80.png",
+    "static/media/ja.png": "./static/media/ja.bc7b2506ee1d258d3aea.png",
+    "static/media/monica.png": "./static/media/monica.289f08576867f33c9918.png",
+    "static/media/banner-equipo.jpg": "./static/media/banner-equipo.27db96fd3dc6b7fa1d1a.jpg",
+    "static/media/bannerServicios.jpg": "./static/media/bannerServicios.1c3f301457205e86fb3a.jpg",
+    "static/media/quiero-vender.png": "./static/media/quiero-vender.76c0be00388983118906.png",
+    "static/media/logoNav.png": "./static/media/logoNav.a60d3db2f3a56bd5320f.png",
+    "static/media/familia.png": "./static/media/familia.ef9a3ffae11437e2b02a.png",
+    "static/media/empresario.png": "./static/media/empresario.7debf49e759e018290f2.png",
+    "static/media/inmoadal-trans.png": "./static/media/inmoadal-trans.92c6ab67e4a4144a238b.png",
+    "static/media/empresa.png": "./static/media/empresa.fd8d2ad9b8a800b70900.png",
+    "static/media/financiar.png": "./static/media/financiar.c9b825e5c4778be3978d.png",
+    "static/media/presentacion.png": "./static/media/presentacion.abc36a787a541cb167dd.png",
+    "static/media/conocimiento.png": "./static/media/conocimiento.c3e4220fd9a574fcc1d5.png",
+    "static/media/logo-caser.png": "./static/media/logo-caser.4cfe2a1446118d7d9240.png",
+    "index.html": "./index.html",
+    "static/media/wasa.svg": "./static/media/wasa.96e3b16e82247ae73931f32280e9005a.svg",
+    "main.58ca0352.css.map": "./static/css/main.58ca0352.css.map",
+    "main.b9d0f521.js.map": "./static/js/main.b9d0f521.js.map",
+    "787.6980fdeb.chunk.js.map": "./static/js/787.6980fdeb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58ca0352.css",
+    "static/js/main.b9d0f521.js"
+  ]
+}
