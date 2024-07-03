@@ -3,10 +3,14 @@ import { Col, Form, InputGroup, Row, Button } from "react-bootstrap";
 import { useState } from "react";
 import Swal from "sweetalert2";
 import { useRef } from "react";
+import { useNavigate } from "react-router-dom";
+
+// andres@wereal.es
 
 export default function FormContacto() {
   const [validated, setValidated] = useState(false);
   const form = useRef();
+  const navigate = useNavigate();
 
   /*funcion para mandar msj al gmail*/
   const sendEmail = (e) => {
@@ -19,6 +23,7 @@ export default function FormContacto() {
           "service_w1k8y3o",
           "template_d0f12sg",
           e.target,
+
           "0FMGwT5Q440eoo4kz"
         )
         .then(
@@ -29,12 +34,7 @@ export default function FormContacto() {
             console.log(error.text);
           }
         );
-      Swal.fire({
-        icon: "success",
-        title: "Mensaje enviado con éxito",
-        showConfirmButton: false,
-        timer: 2000,
-      });
+      navigate("/contacto-gracias");
       form.reset();
       setValidated(false); //
     } else {

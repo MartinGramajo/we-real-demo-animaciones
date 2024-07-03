@@ -16,6 +16,7 @@ import AvisoLegal from "./views/AvisoLegal";
 import CompromisoProteccion from "./views/CompromisoProteccion";
 import PoliticasPrivacidad from "./views/PoliticasPrivacidad";
 import PoliticaDeCookies from "./views/PoliticaDeCookies";
+import GraciasScreen from "./views/GraciasScreen";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Routes>
 
           <Route exact path="/" element={<Home />} />
+          <Route exact path="/contacto-gracias" element={<GraciasScreen />} />
           <Route exact path="/servicios" element={<Servicios />} />
           <Route exact path="/contacto" element={<Contacto />} />
           <Route exact path="/equipo" element={<Equipo />} />
