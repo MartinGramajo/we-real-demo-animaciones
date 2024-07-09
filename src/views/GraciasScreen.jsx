@@ -3,23 +3,23 @@ import { useNavigate } from "react-router-dom";
 import BtnRegresar from "../components/BtnRegresar";
 
 const GraciasScreen = () => {
-  const [counter, setCounter] = useState(5);
-  const navigate = useNavigate();
+  // const [counter, setCounter] = useState(5);
+  // const navigate = useNavigate();
 
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCounter((prevCounter) => prevCounter - 1);
-    }, 1000);
+  // useEffect(() => {
+  //   const timer = setInterval(() => {
+  //     setCounter((prevCounter) => prevCounter - 1);
+  //   }, 1000);
 
-    const timeout = setTimeout(() => {
-      navigate("/");
-    }, 5000);
+  //   const timeout = setTimeout(() => {
+  //     navigate("/");
+  //   }, 5000);
 
-    return () => {
-      clearInterval(timer);
-      clearTimeout(timeout);
-    };
-  }, [navigate]);
+  //   return () => {
+  //     clearInterval(timer);
+  //     clearTimeout(timeout);
+  //   };
+  // }, [navigate]);
 
   return (
     <div>
@@ -37,9 +37,9 @@ const GraciasScreen = () => {
           en cada situación. Además, si estás interesado en comprar una vivienda
           con nosotros, te ofrecemos una amplia variedad de opciones.
         </h5>
-        <h5 className="text-center mt-5 pt-5">
+        {/* <h5 className="text-center mt-5 pt-5">
           Serás redirigido al inicio en <b>{counter}</b> segundos...
-        </h5>
+        </h5> */}
       </div>
       <div className="d-flex justify-content-center">
         <BtnRegresar />
