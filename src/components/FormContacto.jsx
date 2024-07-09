@@ -4,8 +4,6 @@ import { useState } from "react";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
-// andres@wereal.es
-
 export default function FormContacto() {
   const [validated, setValidated] = useState(false);
   const form = useRef();
