@@ -1,7 +1,6 @@
 import emailjs from "@emailjs/browser";
 import { Col, Form, InputGroup, Row, Button } from "react-bootstrap";
 import { useState } from "react";
-import Swal from "sweetalert2";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 
