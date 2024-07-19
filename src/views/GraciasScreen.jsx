@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 import BtnRegresar from "../components/BtnRegresar";
 
 const GraciasScreen = () => {
-  // const [counter, setCounter] = useState(5);
-  // const navigate = useNavigate();
+  useEffect(() => {
+    // Meta Ads Conversion Code
+    const fbqScript = document.createElement("script");
+    fbqScript.innerHTML = "fbq('track', 'Contact');";
+    document.head.appendChild(fbqScript);
 
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setCounter((prevCounter) => prevCounter - 1);
-  //   }, 1000);
+    // Google Ads Conversion Code
+    const gtagScript = document.createElement("script");
+    gtagScript.innerHTML =
+      "gtag('event', 'conversion', {'send_to': 'AW-614909651/L-83CKHujcMZENONm6UC'});";
+    document.head.appendChild(gtagScript);
 
-  //   const timeout = setTimeout(() => {
-  //     navigate("/");
-  //   }, 5000);
-
-  //   return () => {
-  //     clearInterval(timer);
-  //     clearTimeout(timeout);
-  //   };
-  // }, [navigate]);
+    // Clean up the script tags when component unmounts
+    return () => {
+      document.head.removeChild(fbqScript);
+      document.head.removeChild(gtagScript);
+    };
+  }, []);
 
   return (
     <div>
@@ -37,9 +37,6 @@ const GraciasScreen = () => {
           en cada situación. Además, si estás interesado en comprar una vivienda
           con nosotros, te ofrecemos una amplia variedad de opciones.
         </h5>
-        {/* <h5 className="text-center mt-5 pt-5">
-          Serás redirigido al inicio en <b>{counter}</b> segundos...
-        </h5> */}
       </div>
       <div className="d-flex justify-content-center">
         <BtnRegresar />
