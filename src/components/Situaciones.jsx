@@ -1,8 +1,9 @@
-import { Image } from "react-bootstrap";
-import etiqueta from "../assets/img/etiqueta.png";
+import { Button, Image } from "react-bootstrap";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // Importa los estilos de AOS
+import logoCentrado from "../assets/img/logoCentrado.png";
+import { Link } from "react-router-dom";
 
 const Situaciones = () => {
   useEffect(() => {
@@ -10,94 +11,83 @@ const Situaciones = () => {
       AOS.init();
     }, 100); // Ajusta el tiempo según sea necesario
   }, []);
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = `${process.env.PUBLIC_URL}/BasesyCondiciones.pdf`; // Reemplaza con el nombre de tu archivo PDF
+    link.download = "BasesyCondiciones.pdf"; // Nombre del archivo que se descargará
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
-    <div className="bg-azul-situaciones mb-4 ">
+    <div className="bg-blanco-new-situaciones mb-4 ">
       <div className="container text-white">
         <div>
-          <div
-            data-aos="fade-down"
-            data-aos-delay="0"
-            className="py-5 mb-4 text-center"
-          >
-            <h2>Situaciones en las que posiblemente te encuentres:</h2>
+          <div data-aos="fade-down" data-aos-delay="0" className=" text-center">
+            <Image src={logoCentrado} fluid alt="icono okay" />
           </div>
           <div className="row">
-            <div data-aos="fade-up" className="col-12 col-lg-6 pb-5">
+            <div data-aos="fade-up" className="text-center pb-5">
               <article className="d-flex">
-                <div className="me-3">
-                  <Image
-                    style={{ width: "50px" }}
-                    src={etiqueta}
-                    alt="caja"
-                    fluid
-                  />
-                </div>
-                <div>
-                  <h5>
-                    - Quieres comprar una vivienda de forma particular a otra
-                    inmobiliaria. <br />- El tipo de producto que ofrecen en tu
-                    entidad no te sirve. <br />
-                    - Tienes las condiciones pero no sabes como hacerlo. <br />
-                    - No tienes tiempo para ver la mejor opción para ti. <br />
-                    - Tienes en mente una vivienda, pero no quieres reservar
-                    porque no sabes si te darán el préstamo. <br />
-                  </h5>
-
-                  <hr
-                    style={{
-                      width: "100%",
-                      color: "white",
-                      marginTop: "50px",
-                    }}
-                  />
-                </div>
+                <p
+                  className="text-black"
+                  style={{ fontSize: "18px", fontWeight: "bold" }}
+                >
+                  El Grupo Wereal lanza la campaña "VENGA, VENDA y NAVEGUE" para
+                  clientes audaces que quieran vender su vivienda con la mejor
+                  inmobiliaria de Alicante. Los clientes que participen podrán
+                  acceder a un Bono Promo Crucero de hasta 8 días y 7 noches
+                  para 2 personas en las navieras MSC o COSTA.
+                </p>
               </article>
-            </div>
-            <div
-              data-aos="fade-up"
-              data-aos-delay="200"
-              className="col-12 col-lg-6 pb-5"
-            >
-              <article className="d-flex">
-                <div className="me-3">
-                  <Image
-                    style={{ width: "50px" }}
-                    src={etiqueta}
-                    alt="caja"
-                    fluid
-                  />
-                </div>
-                <div>
-                  <h5>
-                    En todas estas situaciones, queremos que cuentes con
-                    nosotros,
-                    <br />
-                    porque podemos ayudarte con nuestro servicio de atención
-                    personalizada. Además, si quieres comprar la vivienda con
-                    nosotros tenemos <br />
-                    una amplia variedad de opciones. Puedes reservar <br />
-                    la vivienda que te gusta y si por alguna razón, las opciones
-                    <br /> que encontramos para tu hipoteca no te sirven, no te
-                    preocupes <br />
-                    <span className="texto-reserva">
-                      {" "}
-                      ¡No pierdes la reserva!{" "}
-                    </span>
-                  </h5>
-
-                  <hr
-                    style={{
-                      width: "100%",
-                      color: "white",
-                      marginTop: "50px",
-                    }}
-                  />
-                </div>
+              <article className=" text-center pt-4">
+                <p className="text-black" style={{ fontSize: "18px" }}>
+                  <span className="h4" style={{ fontWeight: "bold" }}>
+                    Servicios Incluidos:
+                  </span>
+                  <br />
+                  <span className="pt-5" style={{ fontWeight: "bold" }}>
+                    • Pensión Completa: Desayuno, almuerzo, merienda, cena y
+                    snack de medianoche.
+                    <br /> • Alojamiento: Camarote en la categoría elegida con
+                    limpieza diaria y descubierta de cama.
+                    <br /> • Instalaciones: Acceso ilimitado a gimnasio,
+                    piscina, biblioteca, discoteca, teatro, etc.
+                    <br /> • Actividades de Animación: Participación en
+                    programas y actividades como fiestas, bailes, concursos, y
+                    club juvenil.
+                  </span>
+                </p>
               </article>
             </div>
           </div>
         </div>
       </div>
+      <section className=" d-flex  justify-content-center flex-wrap pb-5">
+        <div className="text-center  py-2  text-white mx-4">
+          <article
+            data-aos="fade-down"
+            data-aos-delay="0"
+            className="texto-intermedacion"
+          >
+            <Button className="btn-doble" onClick={handleDownload}>
+              Descarga Bases y condiciones
+            </Button>
+          </article>
+        </div>
+        <div className="text-center py-2 text-white mx-4">
+          <Link
+            to="/contacto"
+            data-aos="fade-down"
+            data-aos-delay="0"
+            className="texto-intermedacion"
+          >
+            <Button className="btn-doble">Haz tu consulta</Button>
+          </Link>
+        </div>
+      </section>
     </div>
   );
 };

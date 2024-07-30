@@ -41,6 +41,12 @@ const Inmoadal = () => {
           </Link>
         </div>
         <div>
+          <Link to="/proteccion-datos" className="text-white">
+            {" "}
+            PROTECCIÓN DE DATOS
+          </Link>
+        </div>
+        <div>
           <a
             className="text-white"
             href="https://wereal.canales-eticos.com/#/"

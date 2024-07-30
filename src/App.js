@@ -17,6 +17,7 @@ import CompromisoProteccion from "./views/CompromisoProteccion";
 import PoliticasPrivacidad from "./views/PoliticasPrivacidad";
 import PoliticaDeCookies from "./views/PoliticaDeCookies";
 import GraciasScreen from "./views/GraciasScreen";
+import ProteccionDatos from "./views/ProteccionDatos";
 
 function App() {
   return (
@@ -44,6 +45,7 @@ function App() {
           <Route exact path="/politicas-de-privacidad" element={<PoliticasPrivacidad />} />
           <Route exact path="/compromiso-de-proteccion" element={<CompromisoProteccion />} />
           <Route exact path="/politicas-de-cookies" element={<PoliticaDeCookies />} />
+          <Route exact path="/proteccion-datos" element={<ProteccionDatos />} />
         </Routes>
       </HashRouter>
       <Footer />
