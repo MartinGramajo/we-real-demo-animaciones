@@ -1,6 +1,6 @@
 import { Image } from "react-bootstrap";
 import inmoadal from "../assets/img/inmoadal-trans.png";
-import logo from "../assets/img/logoNav.png";
+import logo from "../assets/img/werealBlanco.png";
 import { Link } from "react-router-dom";
 
 const Inmoadal = () => {
